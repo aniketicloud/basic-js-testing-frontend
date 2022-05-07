@@ -12,6 +12,7 @@
     "http-server": "^14.1.0",
     "install": "^0.13.0",
     "npm": "^8.6.0",
-    "vitest": "^0.9.0"
+    "vitest": "^0.9.0",
+    "jsonwebtoken": "^8.5.1"
   }
 }
