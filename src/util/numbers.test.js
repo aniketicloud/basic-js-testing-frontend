@@ -37,7 +37,13 @@ describe("cleanNumbers", () => {
 
     const result = cleanNumbers(numbers);
 
-    const expected = [1, 2];
     expect(result[0]).toBeTypeOf("number");
+  });
+
+  it("should throw an error if an array with at least one empty string is provided", () => {
+    const numbers = ["", 2];
+
+    const cleanNumbersFn = () => cleanNumbers(numbers);
+    expect(cleanNumbersFn).toThrow();
   });
 });
